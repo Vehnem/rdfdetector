@@ -41,7 +41,7 @@ class Test extends FunSuite with Matchers with OptionValues with Inside with Ins
     ("xml-long", Seq(RDFXML, TRIX)),
     // Files from Squirrel tests.
     ("genders_en_turtle", Seq(N3, TRIG)),
-    ("new_york_n3", Seq(N3, TRIG)),
+    ("new_york_n3", Seq(N3, TRIG))
   )
 
   val instance = new RdfSerializationDetector

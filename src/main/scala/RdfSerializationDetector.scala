@@ -22,7 +22,7 @@ object RdfSerializationDetector {
     (JSONLD, buildJSONLD),
     (RDFXML, buildRDFXML),
     (TRIG, buildTriG),
-    (TRIX, buildTriX),
+    (TRIX, buildTriX)
   )
 
   object State {
@@ -142,7 +142,7 @@ object RdfSerializationDetector {
     numericLiteral: Boolean = false,
     booleanLiteral: Boolean = false,
     turtle: Boolean = false,
-    n3: Boolean = false,
+    n3: Boolean = false
   )(before: State, after: State = null): State = {
     implicit val builder = before.builder
     val _after = if (after != null) after else State()
